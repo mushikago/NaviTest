@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func pushToView2(sender: AnyObject) {
+        let _view2 = self.storyboard.instantiateViewControllerWithIdentifier("view2") as ViewController2
+        self.navigationController.pushViewController(_view2, animated: true)
+        
+    }
 
 }
 
